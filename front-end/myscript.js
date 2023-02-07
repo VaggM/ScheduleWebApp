@@ -129,6 +129,10 @@ function fillSchedule(lessons) {
 
 function setScheduleText(lesson) {
     let fullText = ` ${lesson.hours} <br> ${lesson.subject} ${lesson.tmima} <br> ${lesson.prof_last_name} <br> ${lesson.classroom} `
+
+    if (lesson.tmima === null)
+        fullText = ` ${lesson.hours} <br> ${lesson.subject} <br> ${lesson.prof_last_name} <br> ${lesson.classroom} `
+
     return fullText
 }
 
