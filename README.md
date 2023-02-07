@@ -5,14 +5,16 @@ in the department of Electrical and Electronic Engineering of University of West
 
 ## How to run
 
-Without docker:
+**Without docker:**
 
 > You need to have node.js installed on your machine. 
 > https://nodejs.org/en/download/ 
 >
 > For the database, you need a mysql server to run on your machine
 > on port 3306, with a database named "schedule_eee" based on the 
-> schedule_eee.sql file on the project as well as user created based on vaggm.sql
+> [schedule_eee.sql](https://github.com/VaggM/ScheduleWebApp/blob/main/database_files/schedule_eee.sql)
+> file on the project as well as user created based on 
+> [vaggm.sql](https://github.com/VaggM/ScheduleWebApp/blob/main/database_files/vaggm.sql)
 >
 > Once you have node installed and mysql running do the following :
 >
@@ -36,13 +38,14 @@ Without docker:
 > node app.js
 > ```
 
-With docker:
+**With docker:**
 
 > You need to have docker running on your machine.
 >
 > https://docs.docker.com/get-docker/
 >
-> Once it is running, copy/download the file docker-compose.yml
+> Once it is running, copy/download the file 
+> [docker-compose.yml](https://github.com/VaggM/ScheduleWebApp/blob/main/schedule-compose/docker-compose.yml)
 > and run the command
 > 
 > ```
