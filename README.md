@@ -62,3 +62,10 @@ in the department of Electrical and Electronic Engineering of University of West
 >
 > The app takes about 30 seconds to start because its waiting for mysql
 > server to be on a healthy state for connections.
+>
+> Port handling:
+>
+> If you want to change the port of a service on your machine,
+> change the **first** port number under ports on each service on the .yml file
+>
+> Default ports are 8000 for the app and 3306 for the database. 
