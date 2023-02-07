@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" type="image/png" href="pada-logo.png"/>
+        <title>Schedule</title>
+    </head>
+
+    <body>
+
+        <div id="body-container">
+
+            <header> Πρόγραμμα Εξαμήνου </header>
+    
+            <main>
+    
+                <div id="semesters">
+                    <div class="filter">
+
+                        <span class="buttonTitle"> Εξάμηνο σχολής: </span>
+                        <span id="seasonButtons">
+                            <button id="winter" onclick="selectSeason('winter')">Xειμερινό</button>
+                            <button id="spring" onclick="selectSeason('spring')">Εαρινό</button>
+                        </span>
+
+                    </div>
+
+                    <div class="filter">
+
+                        <span class="buttonTitle"> Μαθήματα εξαμήνου: </span>
+                        <span id="semButtons"></span>
+
+                    </div>
+
+                    <div class="filter">
+
+                        <span class="buttonTitle" id="options"></span>
+                        <span id="optionButtons"></span>
+
+                    </div>
+                </div>
+    
+    
+                <div id="days">
+    
+                    <section class="day">
+    
+                        <h3>Δευτέρα</h3>
+                        <ul id="Mon"></ul>
+        
+                    </section>
+        
+                    <section class="day">
+        
+                        <h3>Τρίτη</h3>
+                        <ul id="Tue"></ul>
+        
+                    </section>
+        
+                    <section class="day">
+        
+                        <h3>Τετάρτη</h3>
+                        <ul id="Wed"></ul>
+        
+                    </section>
+        
+                    <section class="day">
+        
+                        <h3>Πέμπτη</h3>
+                        <ul id="Thu"></ul>
+        
+                    </section>
+        
+                    <section class="day">
+        
+                        <h3>Παρασκευή</h3>
+                        <ul id="Fri"></ul>
+        
+                    </section>
+    
+                </div>
+
+                <div id="days-mobile">
+
+                    <div id="mobile-buttons">
+
+                        <button class="day-button" id="mobileMon" onclick="selectDay('Mon')">Δευ</button>
+                        <button class="day-button" id="mobileTue" onclick="selectDay('Tue')">Τρι</button>
+                        <button class="day-button" id="mobileWed" onclick="selectDay('Wed')">Τετ</button>
+                        <button class="day-button" id="mobileThu" onclick="selectDay('Thu')">Πεμ</button>
+                        <button class="day-button" id="mobileFri" onclick="selectDay('Fri')">Παρ</button>
+
+                    </div>   
+    
+                    <ul id="single-day"></ul>
+        
+                </div>
+    
+            </main>
+    
+            <footer> &copy; Πανεπιστήμιο Δυτικής Αττικής – University of West Attica </footer>
+
+
+        </div>
+        
+        <script src="myscript.js"></script> 
+        <script src="mobile.js"></script> 
+        
+    </body>
+</html>
