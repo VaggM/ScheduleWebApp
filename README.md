@@ -42,7 +42,7 @@ in the department of Electrical and Electronic Engineering of University of West
 > node app.js
 > ```
 
-**With docker:**
+**With docker compose:**
 
 > You need to have docker running on your machine.
 >
@@ -53,7 +53,7 @@ in the department of Electrical and Electronic Engineering of University of West
 > and run the command
 > 
 > ```
-> docker compose –f “d docker-compose.yml” up –d –build
+> docker compose up
 > ```
 >
 > It will create a docker compose container that creates both a mysql server
